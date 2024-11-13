@@ -47,16 +47,16 @@ export default function App() {
         <h2>Age Calculator</h2>
         <input
           type="date"
-          value={birthday}        
+          value={birthday}
           onChange={(e) => setBirthday(e.target.value)}
           required
         />
         <input type="submit" value="Calculate Age" />
         <button className="btn" type="button" onClick={handleReset}>
           Reset
-        </button>y
-      
-        {age && <Age  years={age.years} months={age.months} days={age.days} /> }
+        </button>
+
+        {age && <Age years={age.years} months={age.months} days={age.days} />}
       </form>
     </>
   );
